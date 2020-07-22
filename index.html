@@ -4,11 +4,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-        <link rel="stylesheet" href="FONTS/css/all.min.css"> 
-        <link rel="stylesheet" href="CSS/styles.css">
-        <script type="text/javascript" src="control.js"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+			integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+			crossorigin="anonymous"
+		></script>
     </head>
-
+ 
     <body>
         <div class="wrapper"> 
             <header class="header">
@@ -17,43 +21,13 @@
             <div class="container">
                 <div class="table-row">
                     <div class="col">
-                        <table>
-                            <tr>
-                                <th>TO BUY</th>
-                                <th>QTY</th>
-                            </tr>
-                            <tr>
-                                <td>Milk</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>salt</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>fruits</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>kotimera</td>
-                                <td>10rs</td>
-                            </tr>
+                        <table id="todotable">
+
                         </table>
                     </div>
                     <div class="col">
-                        <table>
-                            <tr>
-                                <th>DONE</th>
-                                <th>QTY</th>
-                            </tr>
-                            <tr>
-                                <td>Bread</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Butter</td>
-                                <td>1</td>
-                            </tr>
+                        <table id='donetable'>
+ 
                         </table>
                     </div>
                 </div>
@@ -61,15 +35,15 @@
                     <form class="input-area">
                         <div class="input-items">
                             <input type="text" id="itemname" name="itemname" placeholder="Enter Item">
-                            <input type="text" id="qty" name="qty" placeholder="QTY">
-                            <i class="fa fa-plus-square fa-1x btn"></i>
+                            <input type="text" id="qty" name="qty" placeholder="QTY" style="width: 8%;">
+                            <button class='btn' onclick="new_item()" type="button"><i class="fas fa-cart-plus"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
             <footer class="footer">
                 <div class="col about">
-                    <h1 class="table-row about-content animate__animated animate__bounce"> DIGITIZED VERSION OF PAPER SLIP YOU TAKE TO A KIRANA STORE</h1>
+                    <h1 class="author-row about-content animate__animated animate__bounce"> DIGITIZED VERSION OF PAPER SLIP YOU TAKE TO A KIRANA STORE</h1>
                 </div>
                 
                 <div class="col author">
@@ -86,4 +60,6 @@
             </footer>
         </div>
     </body>
+
+    <script type="text/javascript" src="SCRIPTS/control.js"></script>
 </html>

@@ -43,22 +43,6 @@
     justify-content: center;
 }
 
-table {
-    align-self: center;
-    border-collapse: collapse;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 60%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-}
-
-tr {
-    background-color: rgb(225, 238, 220);
-}
-
 .input-row {
     height: 50%;
     display: flex;
@@ -91,7 +75,7 @@ input[type=text]  {
 
 .btn {
     padding: 12px 20px;
-    margin: 12px 0;
+    margin: 8px 0;
     box-sizing: border-box;
     border: none;
     background-color: whitesmoke;
