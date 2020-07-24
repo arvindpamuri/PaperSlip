@@ -1,27 +1,12 @@
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
+body {
   height: 100%;
-}
-
-.wrapper > * {
-  flex: 100%;
-}
-
-.header {
-  background: darkslategray;
   width: 100%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
 }
-.header h1 {
-  align-self: center;
+
+.jumbotron {
+  background: darkslategray;
   font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
+  height: 50px;
 }
 
 .container {
@@ -30,34 +15,8 @@
   flex-flow: column wrap;
 }
 
-.table-row {
-  height: 50%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  box-sizing: border-box;
-  overflow: auto;
-}
-.table-row table {
-  margin-top: 10px;
-  align-self: center;
-  border-collapse: collapse;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 60%;
-}
-.table-row td, .table-row th {
-  border: 1px solid #dddddd;
-  text-align: center;
-}
-.table-row tr {
-  background-color: #e1eedc;
-}
-
-.col {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+.input-row {
+  min-height: 100px;
 }
 
 .input-row {
@@ -98,32 +57,6 @@
 .footer {
   background: darkslategrey;
   color: whitesmoke;
-  height: 20%;
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-end;
-}
-.footer .about {
-  width: 50%;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: center;
-}
-.footer .about-content {
-  width: 80%;
-}
-.footer .author {
-  font-family: "Grenze Gotisch", cursive;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-.footer .author-row {
-  height: 50%;
-  width: 100%;
-}
-.footer .author-name {
-  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
