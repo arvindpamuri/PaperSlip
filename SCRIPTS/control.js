@@ -67,10 +67,9 @@ function display_item({ name, qty, time })
         <li class="list-group-item list-group-item-secondary d-flex justify-content-between">
             <div class='d-flex flex-column'>${name}</div>
             <div>
-                <span>${qty}</span>
-                <span>
-                <button type="button" class="btn btn-outline-light" onClick="item_done(${time.valueOf()})"><i class="fas fa-check-circle fa-2x" style="border: none"></i></button>
-                </span>
+                ${qty}
+            </div>
+                <button type="button" class="btn btn-success" onClick="item_done(${time.valueOf()})"><i class="fas fa-check-circle fa-2x" style="border: none"></i></button>
             </div
         </li>
         `;

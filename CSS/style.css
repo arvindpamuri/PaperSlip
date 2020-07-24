@@ -13,51 +13,6 @@ header, footer {
   height: 50px;
 }
 
-.container {
-  height: 70%;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.input-row {
-  min-height: 100px;
-}
-
-.input-row {
-  height: 50%;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-}
-.input-row .input-area {
-  width: 70%;
-  height: 50%;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  background-color: silver;
-}
-.input-row .input-items {
-  align-self: center;
-  width: 100%;
-}
-.input-row input[type=text] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: whitesmoke;
-  color: black;
-}
-.input-row .btn {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: whitesmoke;
-  color: black;
-}
-
 .footer {
   background: darkslategrey;
   color: whitesmoke;
