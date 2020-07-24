@@ -3,6 +3,10 @@ body {
   width: 100%;
 }
 
+header, footer {
+  width: 100%;
+}
+
 .jumbotron {
   background: darkslategray;
   font-family: Arial, Helvetica, sans-serif;

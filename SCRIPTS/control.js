@@ -27,6 +27,8 @@ function new_item()
 
     //display the array of objects
     display_table(todo_table, todoList);
+    console.log(todoList);
+    console.log(doneList);
 }
 
 //display the table on screen
@@ -39,17 +41,20 @@ function display_table(table, lst)
 
     //Add to display table
     table.innerHTML = joined_all_items;
-    console.log(lst);
 }
 
 function item_done(seconds)
 {   
-    let index = -1;
+    console.log(todoList);
+    console.log(doneList);
     for(let i=0; i<todoList.length; i++)
     {   
         if (todoList[i].time == seconds)
+        {
             doneList.push(todoList[i]);
             todoList.splice(i,1);
+            break;
+        }
     }
     display_table(done_table, doneList);
     display_table(todo_table, todoList);
@@ -57,8 +62,9 @@ function item_done(seconds)
 
 function display_item({ name, qty, time })
 {   
+    console.log(time);
     return `
-        <li class="list-group-item list-group-item-light d-flex justify-content-between">
+        <li class="list-group-item list-group-item-secondary d-flex justify-content-between">
             <div class='d-flex flex-column'>${name}</div>
             <div>
                 <span>${qty}</span>
