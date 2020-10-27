@@ -21,43 +21,45 @@
     </head>
  
     <body>
-        <header class="jumbotron jumbotron-fluid text-center">
+        <header class="jumbotron  text-center">
                 <h1 class="mt-0"><i class="fas fa-sticky-note"></i> PAPER SLIP</h1>
         </header>
 
-        <div class="row" style="min-height:300px">
-            <div class="col-12 col-md-4 order-md-first mx-auto">
-                <ul class="list-group align-self-center">
-                    <li class="list-group-item list-group-item-primary">TO BUY</li>
-                </ul>
-                <ul class="list-group align-self-center" id="todotable">
-                    
-                </ul>
-            </div>
-            <div class="col-12 col-md-4 order-md-last mx-auto">
-                <ul class="list-group align-self-center">
-                    <li class="list-group-item list-group-item-primary">DONE</li>
-                </ul>
-                <ul class="list-group" id='donetable'>
+        <div id="main-body" style="width: 100%;">
+            <div class="row justify-content-center m-0" style="min-height:30vh">
+                <div class="col-12 col-md-4 order-md-first mb-4 mb-md-0">
+                    <ul class="list-group align-self-center">
+                        <li class="list-group-item list-group-item-primary">TO BUY</li>
+                    </ul>
+                    <ul class="list-group align-self-center" id="todotable">
+                        
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 order-md-last mb-4 mb-md-0">
+                    <ul class="list-group align-self-center">
+                        <li class="list-group-item list-group-item-primary">DONE</li>
+                    </ul>
+                    <ul class="list-group" id='donetable'>
 
-                </ul>
-            </div>
-        </div>
-
-        <div class="row mt-5">
-            <div class="col-12 col-md-6 mx-auto">
-                <div class="jumbotron  bg-secondary">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text" id="">NAME AND QTY</span>
-                        </div>
-                        <input type="text" class="form-control" id="itemname" name="itemname" placeholder="Enter Item">
-                        <input type="text" class="form-control" id="qty" name="qty" placeholder="QTY">
-                        <button class='btn btn-secondary' onclick="new_item()" type="button"><i class="fas fa-cart-plus"></i></button>
-                    </div>
+                    </ul>
                 </div>
             </div>
-        </div>  
+
+            <div class="row mt-5 mr-0">
+                <div class="col-12 col-md-6 mx-auto">
+                    <div class="jumbotron  bg-secondary">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="">NAME AND QTY</span>
+                            </div>
+                            <input type="text" class="form-control" id="itemname" name="itemname" placeholder="Enter Item">
+                            <input type="text" class="form-control" id="qty" name="qty" placeholder="QTY">
+                            <button class='btn btn-secondary' onclick="new_item()" type="button"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
         
             
 
@@ -65,13 +67,11 @@
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row mx-auto">
-                    <div class="col-12 col-md-6">
-                            <span class="h-75 d-inline-block animate__animated animate__bounce"> <h1>DIGITIZED VERSION OF PAPER SLIP YOU TAKE TO A KIRANA STORE</h1></span>
-                    </div>
-                    <div class="col-12 col-md-6 ">
+
+                    <div class="col-12 col-md-6 align-items-center justify-content-center">
                         <div class="row justify-content-center">
                             <div class="col-auto">
-                                <h1 class="animate__animated animate__bounce" style="font-family: 'Grenze Gotisch', cursive;">Author @ Aravind Pamoori</h1>
+                                <h1 class="animate__animated animate__bounce" style="font-family: 'Grenze Gotisch', cursive; margin: 0;">Author @ Aravind Pamoori</h1>
                             </div>
                         </div>
                         <div class="row justify-content-center">
