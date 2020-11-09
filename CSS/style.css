@@ -7,8 +7,9 @@ header, footer {
   width: 100%;
 }
 
-#main-body {
-
+li {
+  text-align: center;
+  color: whitesmoke;
 }
 
 .jumbotron {
@@ -23,4 +24,3 @@ header, footer {
   min-height: 16vh;
 }
 
-/*# sourceMappingURL=style.css.map */

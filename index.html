@@ -28,18 +28,18 @@
         <div id="main-body" style="width: 100%;">
             <div class="row justify-content-center m-0" style="min-height:30vh">
                 <div class="col-12 col-md-4 order-md-first mb-4 mb-md-0">
-                    <ul class="list-group align-self-center">
-                        <li class="list-group-item list-group-item-primary">TO BUY</li>
+                    <ul class="list-group align-self-center w-75">
+                        <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">TO BUY<span class="badge badge-primary badge-pill" onclick="clearList(`todo`)">clear</span></li>
                     </ul>
-                    <ul class="list-group align-self-center" id="todotable">
+                    <ul class="list-group w-75" id="todotable">
                         
                     </ul>
                 </div>
                 <div class="col-12 col-md-4 order-md-last mb-4 mb-md-0">
-                    <ul class="list-group align-self-center">
-                        <li class="list-group-item list-group-item-primary">DONE</li>
+                    <ul class="list-group align-self-center w-75">
+                        <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">DONE<span class="badge badge-primary badge-pill" onclick="clearList(`done`)">clear</span></li>
                     </ul>
-                    <ul class="list-group" id='donetable'>
+                    <ul class="list-group w-75" id='donetable'>
 
                     </ul>
                 </div>
@@ -88,5 +88,5 @@
         </footer>
     </body>
 
-    <script type="text/javascript" src="SCRIPTS/control.js"></script>
+    <script type="text/javascript" src="lists.js"></script>
 </html>
