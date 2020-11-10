@@ -21,50 +21,56 @@
     </head>
  
     <body>
-        <header class="jumbotron  text-center">
-                <h1 class="mt-0"><i class="fas fa-sticky-note"></i> PAPER SLIP</h1>
-        </header>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header class="container-fluid  text-center align-items-center justify-content-center mb-3" id="header">
+                        <h1><i class="fas fa-sticky-note"></i> PAPER SLIP</h1>
+                </header>
 
-        <div id="main-body" style="width: 100%;">
             <div class="row justify-content-center m-0" style="min-height:30vh">
-                <div class="col-12 col-md-4 order-md-first mb-4 mb-md-0">
-                    <ul class="list-group align-self-center w-75">
+                <div class="col-12 col-md-3 order-md-first mb-4 mb-md-0">
+                    <ul class="list-group align-self-center">
                         <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">TO BUY<span ><button type="button" class="btn btn-primary" onclick="clearList(`todo`)">Clear</button></span></li>
                     </ul>
-                    <ul class="list-group w-75" id="todotable">
+                    <ul class="list-group" id="todotable">
                         
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 order-md-last mb-4 mb-md-0">
-                    <ul class="list-group align-self-center w-75">
+                <div class="col-12 col-md-3 order-md-last mb-4 mb-md-0">
+                    <ul class="list-group align-self-center">
                         <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">DONE<span ><button type="button" class="btn btn-primary" onclick="clearList(`done`)">Clear</button></span></li>
                     </ul>
-                    <ul class="list-group w-75" id='donetable'>
+                    <ul class="list-group" id='donetable'>
 
                     </ul>
                 </div>
             </div>
 
-            <div class="row mt-5 mr-0">
-                <div class="col-12 col-md-6 mx-auto">
-                    <div class="jumbotron  bg-secondary">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                            <span class="input-group-text" id="">NAME AND QTY</span>
-                            </div>
-                            <input type="text" class="form-control" id="itemname" name="itemname" placeholder="Enter Item">
-                            <input type="text" class="form-control" id="qty" name="qty" placeholder="QTY">
-                            <button class='btn btn-secondary' onclick="new_item()" type="button"><i class="fas fa-cart-plus"></i></button>
+            <div class="row mt-5 mr-0 ml-0">
+                <div class="col-12 col-md-3 mx-auto bg-secondary rounded">
+                    <div class="input-group mb-3 mt-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Item</span>
                         </div>
+                        <input type="text" class="form-control" placeholder="Name" id="itemname" name="itemname" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">QUANTITY</span>
+                        </div>
+                        <input type="number" class="form-control" placeholder="Number Only" id="qty" name="qty" required>
+                    </div>
+                    <div class="input-group mb-3 center-block">
+                        <button class="btn btn-primary mb-3 align-items-center center-block" type="button" onclick="new_item()">
+                            <i class="fas fa-cart-plus mr-1"></i>ADD
+                        </button>
                     </div>
                 </div>
+                
             </div>  
         </div>
-        
-            
 
-
-        <footer class="footer">
+        <footer id="footer">
             <div class="container-fluid">
                 <div class="row mx-auto">
 
@@ -86,6 +92,7 @@
                 </div>
             </div>
         </footer>
+        </div>
     </body>
 
     <script type="text/javascript" src="lists.js"></script>

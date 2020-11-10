@@ -95,7 +95,7 @@ function display_todo_item({ name, qty, time })
         </li>
         `;
 }
-S
+
 function display_done_item({ name, qty, time })
 {   
     return `
